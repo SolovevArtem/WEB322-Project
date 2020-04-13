@@ -188,7 +188,7 @@ module.exports.getPeopleByVin = function(Vin){
             where: {vin: Vin}
         })
         .then((data)=>{
-            resolve(data[0]);
+            resolve(data);
         })
         .catch((err)=>{
             reject("no results returned");
